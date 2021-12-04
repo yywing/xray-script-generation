@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import FormWithData from 'xray-script-generation-component';
+import ScriptFormWithData from 'xray-script-generation-component';
 
 
 ReactDOM.render((
-  <FormWithData />
+  <ScriptFormWithData />
 ), document.getElementById("root"));
