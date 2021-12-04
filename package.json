@@ -2,6 +2,7 @@
   "name": "xray-script-generation",
   "version": "2.0.0",
   "private": true,
+  "homepage": "./",
   "workspaces": [
     "packages/*"
   ],
@@ -17,9 +18,10 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "yarn download_schema && react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "download_schema": "cd packages/xray-script-generation-component && yarn download_schema v2"
   },
   "eslintConfig": {
     "extends": [
